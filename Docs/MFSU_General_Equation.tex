@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Unified Fractal-Stochastic Model (MFSU): General Equation and Physical Interpretation}}
+\author{Miguel Ángel Franco León}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+
+The Unified Fractal-Stochastic Model (MFSU) provides a mathematical framework for describing physical systems whose geometry and dynamics are governed by intrinsic fractal structures. Its general equation extends traditional field dynamics by introducing fractional operators, stochastic components, and conformal rescaling through a fractal dimension parameter $d_f$. 
+
+At the heart of the model lies the universal relationship
+\[
+\delta_p = 3 - d_f,
+\]
+where $\delta_p$ is the correlation exponent and $d_f$ the fractal dimension. This relation emerges from three independent derivations: geometric (codimension), stochastic (correlation exponent), and variational (dimensional consistency).
+
+\section*{General MFSU Equation}
+
+The field $\phi(\mathbf{x},t)$ evolves according to the fractal-stochastic equation
+\begin{equation}
+\frac{\partial \phi}{\partial t}
+= - \gamma \, (-\Delta)^{d_f/2}\,\phi
++ \lambda \, (-\Delta)^{(3-d_f)/2}\,\phi^2
++ \sigma \, \eta_{\delta_p}(\mathbf{x},t),
+\label{eq:MFSU}
+\end{equation}
+where each term encodes a distinct physical mechanism.
+
+\section*{Term-by-term Interpretation}
+
+\begin{itemize}
+    \item \textbf{Fractal Laplacian term:}
+    \[
+    - \gamma \, (-\Delta)^{d_f/2}\,\phi
+    \]
+    Generalizes the classical Laplacian to fractional order $d_f/2$.  
+    - $\gamma$ is a damping parameter.  
+    - Represents diffusion and smoothing under fractal geometry.  
+    - Governs how structures propagate in fractal space.
+
+    \item \textbf{Nonlinear interaction term:}
+    \[
+    \lambda \, (-\Delta)^{(3-d_f)/2}\,\phi^2
+    \]
+    Introduces nonlinear coupling.  
+    - $\lambda$ controls the strength of interactions.  
+    - The fractional operator $(3-d_f)/2$ connects topology with field self-interaction.  
+    - Responsible for emergence of complex patterns and clustering.
+
+    \item \textbf{Stochastic forcing term:}
+    \[
+    \sigma \, \eta_{\delta_p}(\mathbf{x},t)
+    \]
+    Models correlated noise with spectral exponent $\delta_p = 3 - d_f$.  
+    - $\sigma$ is noise amplitude.  
+    - $\eta_{\delta_p}$ represents fractional Gaussian noise.  
+    - Encodes intrinsic fluctuations of the system at multiple scales.
+\end{itemize}
+
+\section*{Physical Meaning}
+
+Equation~\eqref{eq:MFSU} describes how fields evolve when the underlying space is fractal rather than smooth. Each component has a clear interpretation:
+\begin{enumerate}
+    \item Fractal Laplacian: diffusion in a geometry with fractional dimension.
+    \item Nonlinear coupling: self-organization of matter and energy.
+    \item Stochastic term: randomness structured by fractal correlations.
+\end{enumerate}
+
+Together, these elements produce dynamics consistent with observed complexity in nature, from the Cosmic Microwave Background (CMB) to cometary comae and planetary surfaces.
+
+\section*{Applications}
+
+\begin{itemize}
+    \item \textbf{Cosmology:} Reproduces fractal patterns in the CMB, validating $d_f \approx 2.079$ and $\delta_p \approx 0.921$.  
+    \item \textbf{Astrophysical bodies:} Allows discrimination between natural and artificial objects (e.g., interstellar comets) by measuring fractal dimension.  
+    \item \textbf{Planetary surfaces:} Characterizes roughness and complexity of terrains such as Mars' Olympus Mons with high precision.  
+\end{itemize}
+
+\section*{Conclusion}
+
+The MFSU general equation provides a unified description of fractal-structured systems, bridging geometry, stochastic processes, and nonlinear dynamics. Its predictive capacity arises from the universal relation $\delta_p = 3 - d_f$, positioning it as a fundamental framework for analyzing both cosmic and local structures.
+
+\end{document}
