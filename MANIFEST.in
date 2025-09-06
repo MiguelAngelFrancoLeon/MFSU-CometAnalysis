@@ -1,0 +1,119 @@
+# MFSU Comet Analysis - Package Manifest
+# =====================================
+# 
+# This file specifies additional files to include in the Python package
+# distribution beyond the standard Python modules.
+#
+# For NASA review: Includes all documentation, examples, and configuration
+# files necessary for complete package functionality and scientific
+# reproducibility.
+
+# Core package files
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py
+include MANIFEST.in
+
+# Documentation (essential for NASA review)
+recursive-include docs *.md
+recursive-include docs *.rst
+recursive-include docs *.txt
+recursive-include docs *.pdf
+recursive-include docs *.png
+recursive-include docs *.jpg
+recursive-include docs *.svg
+
+# Examples and tutorials (critical for scientific reproducibility)
+recursive-include examples *.py
+recursive-include examples *.ipynb
+recursive-include examples *.md
+recursive-include examples *.txt
+recursive-include examples *.json
+
+# Legacy and development history (transparency for NASA review)
+recursive-include legacy *.py
+recursive-include legacy *.ipynb
+recursive-include legacy *.md
+recursive-include legacy *.txt
+recursive-include legacy *.json
+
+# Test suite (quality assurance)
+recursive-include tests *.py
+recursive-include tests *.json
+recursive-include tests *.yaml
+recursive-include tests *.txt
+
+# Configuration files
+recursive-include mfsu_comet_analysis *.json
+recursive-include mfsu_comet_analysis *.yaml
+recursive-include mfsu_comet_analysis *.cfg
+recursive-include mfsu_comet_analysis *.ini
+
+# Data files (if any)
+recursive-include mfsu_comet_analysis/data *
+recursive-include mfsu_comet_analysis/configs *
+
+# Scientific reference files
+include *.bib
+include *.csl
+recursive-include references *.pdf
+recursive-include references *.bib
+
+# Development and build files
+include pyproject.toml
+include setup.cfg
+include tox.ini
+include .gitignore
+include .gitattributes
+
+# Continuous integration
+include .github/workflows/*.yml
+include .github/workflows/*.yaml
+
+# Quality assurance files
+include .pre-commit-config.yaml
+include .flake8
+include .mypy.ini
+include pytest.ini
+
+# Exclude unwanted files and directories
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude .git*
+global-exclude *.so
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude .tox
+global-exclude build
+global-exclude dist
+global-exclude *.egg-info
+
+# Exclude temporary and cache files
+global-exclude *~
+global-exclude *.swp
+global-exclude *.swo
+global-exclude .ipynb_checkpoints
+global-exclude .vscode
+global-exclude .idea
+
+# Exclude large data files that should be downloaded separately
+global-exclude *.fits
+global-exclude *.hdf5
+global-exclude *.h5
+prune data/large_files
+
+# Include specific important files even if they might be excluded
+include CITATION.cff
+include AUTHORS.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+
+# NASA review specific inclusions
+include NASA_REVIEW.md
+include SCIENTIFIC_VALIDATION.md
+include METHODOLOGY.md
