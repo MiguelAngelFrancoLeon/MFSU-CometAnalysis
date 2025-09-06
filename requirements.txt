@@ -1,0 +1,30 @@
+# MFSU-CometAnalysis Framework Dependencies
+# Core scientific computing packages for fractal analysis
+
+# Numerical computing and array operations
+numpy>=1.21.0
+
+# Scientific plotting and visualization
+matplotlib>=3.5.0
+
+# Statistical analysis and curve fitting
+scipy>=1.7.0
+
+# Image loading and processing
+Pillow>=8.3.0
+
+# Optional: Enhanced astronomical data support
+# Uncomment the following lines if working with FITS files or astronomical datasets
+# astropy>=5.0.0
+# healpy>=1.15.0
+
+# Optional: Interactive analysis and notebooks
+# Uncomment the following lines for Jupyter notebook support
+# jupyter>=1.0.0
+# ipywidgets>=7.6.0
+
+# Optional: Development and testing
+# Uncomment the following lines for development work
+# pytest>=6.0.0
+# black>=22.0.0
+# flake8>=4.0.0
